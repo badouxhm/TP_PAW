@@ -7,16 +7,20 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-        <table>
-            <tr>
-                <th>Matricule :</th>
-                <th>Nom :</th>
-                <th>Moyenne :</th>
-                <th>Décision :</th>
-            </tr>
-        </table>
-    ?>
+    <select value="">
+        <?php
+        $options = array(
+            'ISIL1',
+            'ISIL2',
+            'SI1',
+            'SI2'
+            );
+        foreach ($options as $valeur){
+            echo "<option>$valeur</option>";
+        }
+        ?>
+    </select>
+    
     
 </body>
 </html>
